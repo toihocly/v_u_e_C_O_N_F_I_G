@@ -1,0 +1,79 @@
+
+@import 'bootstrap/variables';
+
+$default-color: $white;
+$primary-color: $primary;
+
+$today-color: $white;
+
+$input-border-color: #ccc !default;
+$input-color: #555 !default;
+$input-hover-border-color: #409aff !default;
+
+$disabled-color: $white;
+$disabled-background-color: transparent;
+
+$border-color: #e8e8e8 !default;
+
+$calendar-active-color: #fff !default;
+$calendar-active-background-color: mix($white, $primary, 35%);
+
+$calendar-hover-color: $default-color !default;
+$calendar-hover-background-color: mix($white, $primary, 35%);
+
+$calendar-in-range-color: $default-color !default;
+$calendar-in-range-background-color: mix($white, $primary, 10%);
+
+$time-active-color: $default-color !default;
+$time-active-background-color: mix($white, $primary, 15%);
+
+$time-hover-color: $default-color !default;
+$time-hover-background-color: mix($white, $primary, 35%);
+
+@import '~vue2-datepicker/scss/index.scss';
+
+.#{$namespace}-time,
+.#{$namespace}-datepicker-main {
+	border: 0;
+	background: $primary;
+	color: $white;
+}
+
+.#{$namespace}-calendar-content {
+	.cell{
+		&.today {
+			border: 1px solid $white;
+		}
+		&.disabled {
+			opacity: .3;
+		}
+		&.not-current-month {
+			color: $white;
+		}
+	}
+}
+
+
+.#{$namespace}-btn {
+  &:hover {
+    border-color: $default-color;
+    color: mix($default-color, $primary, 35%);;
+  }
+}
+
+.hideIcon{	
+	.#{$namespace} {
+		&-datepicker {
+			max-width: 100%;
+		}
+		&-icon{
+			&-clear,
+			&-calendar {
+				display: none !important
+			}
+		}
+	}
+}
+.mx-datepicker-popup {
+  z-index: 1050;
+}

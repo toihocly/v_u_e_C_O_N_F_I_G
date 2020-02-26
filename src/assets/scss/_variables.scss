@@ -1,0 +1,57 @@
+// fonts
+$path: "~@/assets/fonts/";
+$font-base: "Open sans";
+
+$primary-color: #fff;
+$secondary-color: #535d6b;
+$danger-color: #d0021b;
+
+$gray-300-color: #3f4a5a;
+
+$blue-btn-color: #5c80d1;
+
+$link-color: #5c80d1;
+
+$font-weight-list: (
+  light: (
+    normal: OpenSans-Light,
+    italic: OpenSans-LightItalic
+  )
+  300,
+  normal: (
+    normal: OpenSans-Regular,
+    italic: OpenSans-Italic
+  )
+  normal,
+  semiBold: (
+    normal: OpenSans-SemiBold,
+    italic: OpenSans-SemiBoldItalic
+  )
+  600,
+  bold: (
+    normal: OpenSans-Bold,
+    italic: OpenSans-BoldItalic
+  )
+  bold,
+  extraBold: (
+    normal: OpenSans-ExtraBold,
+    italic: OpenSans-ExtraBoldItalic
+  )
+  800
+);
+
+// Size
+$gl-bar-height: 2.5rem;
+$container-spacing-small: 0.625rem;
+$container-spacing: 1.25rem;
+
+// Colors
+$primary-color-hover: lighten($primary-color, 5%);
+$primary-color-active: lighten($primary-color, 10%);
+
+// Size:
+$padding-content: 20px;
+$padding-content-xs: 10px;
+
+// Textfield height
+$text-field-height: 30px;

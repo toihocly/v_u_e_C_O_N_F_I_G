@@ -1,0 +1,9 @@
+.b-toaster.b-toaster-top-right .b-toaster-slot, 
+.b-toaster.b-toaster-top-left .b-toaster-slot, 
+.b-toaster.b-toaster-top-center .b-toaster-slot, 
+.b-toaster.b-toaster-top-full .b-toaster-slot {
+  top: $gl-bar-height
+}
+.b-toast:not(:last-child) {
+  margin-bottom: 0;
+}

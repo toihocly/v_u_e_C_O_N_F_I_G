@@ -1,0 +1,17 @@
+@import "variables";
+
+$slider-height: 20px !default;
+$slider-width: 130px !default;
+$rail-height: 6px !default;
+$knob-size: 20px !default;
+
+$rail-color: rgba($white, .5);
+$rail-fill-color: $white;
+$knob-color: $primary-color;
+
+$knob-border: 2px solid $white;
+$knob-shadow: 1px 1px rgba(0, 0, 0, 0.2) !default;
+
+
+@import '~vue-range-slider/dist/vue-range-slider.scss';
+

@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'pSOneUIgallery';
+  src:  url('../fonts/icon/pSOneUIgallery.eot?1frp5c');
+  src:  url('../fonts/icon/pSOneUIgallery.eot?1frp5c#iefix') format('embedded-opentype'),
+    url('../fonts/icon/pSOneUIgallery.ttf?1frp5c') format('truetype'),
+    url('../fonts/icon/pSOneUIgallery.woff?1frp5c') format('woff'),
+    url('../fonts/icon/pSOneUIgallery.svg?1frp5c#pSOneUIgallery') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pSOneUIgallery' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.5rem;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  &-compare{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe908;');
+    &:before {
+        content: "\e908";
+      }
+    }
+  &-caret_doubleleft{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
+    &:before {
+        content: "\e900";
+      }
+    }
+  &-caret_doubleright{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe901;');
+    &:before {
+        content: "\e901";
+      }
+    }
+  &-caret_down{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe902;');
+    &:before {
+        content: "\e902";
+      }
+    }
+  &-caret_left{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe903;');
+    &:before {
+        content: "\e903";
+      }
+    }
+  &-caret_right{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe904;');
+    &:before {
+        content: "\e904";
+      }
+    }
+  &-caret_up{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe905;');
+    &:before {
+        content: "\e905";
+      }
+    }
+  &-clock{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe906;');
+    &:before {
+        content: "\e906";
+      }
+    }
+  &-close{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe907;');
+    &:before {
+        content: "\e907";
+      }
+    }
+  &-display_grid{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe909;');
+    &:before {
+        content: "\e909";
+      }
+    }
+  &-display_list{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90a;');
+    &:before {
+        content: "\e90a";
+      }
+    }
+  &-download{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90b;');
+    &:before {
+        content: "\e90b";
+      }
+    }
+  &-fullscreen{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90c;');
+    &:before {
+        content: "\e90c";
+      }
+    }
+  &-links{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90d;');
+    &:before {
+        content: "\e90d";
+    }
+  }
+  
+  &-livelapse{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe90e;');
+  }
+
+  &-livelapse .path1{
+    &:before {
+        content: "\e90e";
+        color: rgb(208, 32, 39);
+   }
+  }
+  &-livelapse .path2{
+    &:before {
+        content: "\e90f";
+        margin-left: -2.875em;
+        color: rgb(255, 255, 255);
+    }
+  }
+  &-logout{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe910;');
+    &:before {
+        content: "\e910";
+      }
+    }
+  &-menu{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe911;');
+    &:before {
+        content: "\e911";
+      }
+    }
+  &-share{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe912;');
+    &:before {
+        content: "\e912";
+      }
+    }
+  &-video{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe913;');
+    &:before {
+        content: "\e913";
+      }
+    }
+  &-zoom_maximise{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe914;');
+    &:before {
+        content: "\e914";
+      }
+    }
+  &-zoom_minimise{
+    *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe915;');
+    &:before {
+        content: "\e915";
+      }
+    }
+}

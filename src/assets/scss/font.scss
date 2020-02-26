@@ -1,0 +1,21 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+
+@each $font-family, $font in $font-weight-list {
+    $fontstylelist: nth($font, 1);
+    $fontweight: nth($font, 2);
+    @each $fontstyle, $fst in $fontstylelist {
+        @font-face {
+            font-family: $font-base;
+            src: url('#{$path}#{$fst}.eot');
+            src: url('#{$path}#{$fst}.eot?#iefix') format('embedded-opentype'),
+                url('#{$path}#{$fst}.woff2') format('woff2'),
+                url('#{$path}#{$fst}.woff') format('woff'),
+                url('#{$path}#{$fst}.ttf') format('truetype'),
+                url('#{$path}#{$fst}.svg##{$fst}') format('svg');
+            font-weight: $fontweight;
+            font-style: $fontstyle;
+        }
+    }
+  }

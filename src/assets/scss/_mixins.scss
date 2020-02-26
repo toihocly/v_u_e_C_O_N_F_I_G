@@ -1,0 +1,39 @@
+@import "node_modules/bootstrap/scss/_functions.scss";
+@import "node_modules/bootstrap/scss/_variables.scss";
+@import "node_modules/bootstrap/scss/_mixins.scss";
+
+@mixin size($width, $height: $width){
+  width: $width;
+  height: $height;
+}
+
+@mixin transition($time: 0.2s, $cubi: ease){
+  -webkit-transition: $time $cubi;
+  -moz-transition: $time $cubi;
+  -ms-transition: $time $cubi;
+  -o-transition: $time $cubi;
+  transition: $time $cubi;
+}
+
+@mixin translate($x,$y:$x){
+  -webkit-transform: translate($x,$y);
+  -moz-transform: translate($x,$y);
+  -ms-transform: translate($x,$y);
+  transform: translate($x,$y);
+}
+
+@mixin rotate($rotate) {
+  -webkit-transform: rotate($rotate);
+  -moz-transform: rotate($rotate);
+  -ms-transform: rotate($rotate);
+  -o-transform: rotate($rotate);
+  transform: rotate($rotate);
+}
+
+@mixin transform($value){
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
