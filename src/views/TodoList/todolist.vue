@@ -1,7 +1,7 @@
 <template>
-  <div>TODO LISTS</div>
+    <div>TODO LISTS</div>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>

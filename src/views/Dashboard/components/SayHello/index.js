@@ -1,3 +1,3 @@
-import SayHello from "./sayhello";
+import SayHello from './sayhello'
 
-export { SayHello };
+export { SayHello }

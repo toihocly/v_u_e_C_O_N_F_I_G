@@ -1,3 +1,3 @@
-import BottomBar from "./bottombar";
+import BottomBar from './bottombar'
 
-export { BottomBar };
+export { BottomBar }

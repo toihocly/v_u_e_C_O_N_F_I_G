@@ -1,13 +1,13 @@
 <template>
-  <div :class="$style.root">Slider Bar</div>
+    <div :class="$style.root">Slider Bar</div>
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style module lang="scss" scoped>
 .root {
-  background: lightblue;
+    background: lightblue;
 }
 </style>

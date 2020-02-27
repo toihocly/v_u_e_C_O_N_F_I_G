@@ -1,3 +1,3 @@
-import SliderBar from "./sliderbar";
+import SliderBar from './sliderbar'
 
-export { SliderBar };
+export { SliderBar }
