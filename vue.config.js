@@ -10,6 +10,7 @@ module.exports = {
                 prependData: `
             @import "~@/assets/scss/bootstrap/_variables.scss";
             @import "~@/assets/scss/_mixins.scss";
+            @import "~@/assets/scss/_animation.scss";
           `,
             },
         },

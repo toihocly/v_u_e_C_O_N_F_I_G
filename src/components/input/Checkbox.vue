@@ -8,7 +8,16 @@
             <input :checked="value" type="checkbox" />
             <span />
         </div>
-        <div class="ml-3" :class="labelClass">
+        <div
+            :class="[
+                labelClass,
+                {
+                    [$style.none]: directLabel === 'none',
+                    [$style.left]: directLabel === 'left',
+                    [$style.right]: directLabel === 'right',
+                },
+            ]"
+        >
             {{ label }}
         </div>
     </div>
@@ -27,6 +36,15 @@ export default {
         },
         labelClass: {
             type: String,
+            required: false,
+        },
+        directLabel: {
+            type: String,
+            validator: function(value) {
+                // The value must match one of these strings
+                return ['none', 'left', 'right'].indexOf(value) !== -1
+            },
+            default: 'right',
             required: false,
         },
     },
@@ -63,6 +81,17 @@ export default {
                 @include transform(rotate(-45deg) translate(-25%, -25%));
             }
         }
+    }
+    .none {
+        margin: 0;
+        display: none;
+    }
+    .left {
+        margin-right: 1rem;
+        order: -1;
+    }
+    .right {
+        margin-left: 1rem;
     }
 }
 </style>

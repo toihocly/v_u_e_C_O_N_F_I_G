@@ -1,7 +1,11 @@
 <template>
     <div :class="$style.root">
         <div :class="$style.topbar">
-            <img alt="" src="@/assets/images/logo.png" />
+            <img
+                alt=""
+                src="@/assets/images/logo.png"
+                @click="handleClickImage"
+            />
             <nav>
                 <li>home</li>
                 <li>product</li>
@@ -20,6 +24,11 @@ export default {
         return {
             Logo,
         }
+    },
+    methods: {
+        handleClickImage() {
+            this.$emit('onSwitchSlider')
+        },
     },
 }
 </script>

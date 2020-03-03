@@ -1,5 +1,7 @@
-export * from './SayHello'
-export * from './TopBar'
-export * from './BottomBar'
-export * from './SliderBar'
-export * from './Main'
+import TopBar from './TopBar'
+import Main from './Main'
+import BottomBar from './BottomBar'
+import SliderBar from './SliderBar'
+import Demo from './Demo'
+
+export { TopBar, Main, BottomBar, SliderBar, Demo }

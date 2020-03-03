@@ -1,0 +1,26 @@
+
+$prima22ry-color: #3f4a5a;
+
+@mixin hideOpacity(){
+    opacity: 0;
+    transition: opacity 195ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    visibility: hidden;
+  }
+@mixin showOpacity(){
+    opacity: 1;
+    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+@mixin hideSliderBar(){
+  transform: translateX(-250px);
+  // visibility: hidden;
+  transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+@mixin showSliderBar(){
+  transform: none;
+  transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+
+

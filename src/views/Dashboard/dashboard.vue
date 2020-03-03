@@ -1,27 +1,35 @@
 <template>
     <div :class="$style.root">
-        <TopBar />
-        <SliderBar />
-        <Main />
+        <TopBar @onSwitchSlider="handleSwitchSlider" />
+        <Main :isOpenSlider="isOpenSlider" />
         <bottomBar />
+        <SliderBar
+            :isOpenSlider="isOpenSlider"
+            @onSwitchSlider="handleSwitchSlider"
+        />
     </div>
 </template>
 
 <script>
-import {
-    TopBar,
-    BottomBar,
-    SliderBar,
-    Main,
-} from '@/views/dashboard/components'
+import { TopBar, BottomBar, Main, SliderBar } from './components'
 
 export default {
-    components: { TopBar, BottomBar, SliderBar, Main },
+    components: { TopBar, BottomBar, Main, SliderBar },
     props: {
         msg: {
             type: String,
             default: '',
             require: false,
+        },
+    },
+    data() {
+        return {
+            isOpenSlider: false,
+        }
+    },
+    methods: {
+        handleSwitchSlider() {
+            this.isOpenSlider = !this.isOpenSlider
         },
     },
 }
@@ -32,7 +40,7 @@ styled
 .root {
     display: grid;
     height: 100vh;
-    grid-template-columns: 220px 1fr;
     grid-template-rows: 80px 1fr 60px;
+    grid-template-columns: 1fr;
 }
 </style>

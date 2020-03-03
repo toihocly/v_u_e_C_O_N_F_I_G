@@ -1,8 +1,8 @@
 // fonts
-$path: "~@/assets/fonts/";
-$font-base: "Open sans";
+$path: '~@/assets/fonts/';
+$font-base: 'Open sans';
 
-$primary-color: #fff;
+$primary-color: #3f4a5a;
 $secondary-color: #535d6b;
 $danger-color: #d0021b;
 
@@ -13,31 +13,31 @@ $blue-btn-color: #5c80d1;
 $link-color: #5c80d1;
 
 $font-weight-list: (
-  light: (
-    normal: OpenSans-Light,
-    italic: OpenSans-LightItalic
-  )
-  300,
-  normal: (
-    normal: OpenSans-Regular,
-    italic: OpenSans-Italic
-  )
-  normal,
-  semiBold: (
-    normal: OpenSans-SemiBold,
-    italic: OpenSans-SemiBoldItalic
-  )
-  600,
-  bold: (
-    normal: OpenSans-Bold,
-    italic: OpenSans-BoldItalic
-  )
-  bold,
-  extraBold: (
-    normal: OpenSans-ExtraBold,
-    italic: OpenSans-ExtraBoldItalic
-  )
-  800
+    light: (
+        normal: OpenSans-Light,
+        italic: OpenSans-LightItalic,
+    )
+    300,
+    normal: (
+        normal: OpenSans-Regular,
+        italic: OpenSans-Italic,
+    )
+    normal,
+    semiBold: (
+        normal: OpenSans-SemiBold,
+        italic: OpenSans-SemiBoldItalic,
+    )
+    600,
+    bold: (
+        normal: OpenSans-Bold,
+        italic: OpenSans-BoldItalic,
+    )
+    bold,
+    extraBold: (
+        normal: OpenSans-ExtraBold,
+        italic: OpenSans-ExtraBoldItalic,
+    )
+    800,
 );
 
 // Size
