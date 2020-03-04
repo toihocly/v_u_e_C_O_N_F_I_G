@@ -3,8 +3,8 @@
         :class="[
             $style.root,
             {
-                [$style.root_open]: isOpen === true,
-                [$style.root_close]: isOpen === false,
+                [$style.root_open]: isOpen,
+                [$style.root_close]: !isOpen,
             },
         ]"
     >
@@ -12,27 +12,26 @@
             :class="[
                 $style.muiBackdrop,
                 {
-                    [$style.muiBackdrop_open]: isOpen === true,
-                    [$style.muiBackdrop_close]: isOpen === false,
+                    [$style.muiBackdrop_open]: isOpen,
+                    [$style.muiBackdrop_close]: !isOpen,
                 },
             ]"
-            @click="handleCloseMenu"
+            @click="handleClose"
         />
         <div
             :class="[
                 $style.muiPaper_root,
                 $style.muiPaper_elevation16,
                 $style.muiPaper_paper,
-                $style.muiPaper_paperAnchorLeft,
                 {
-                    [$style.muiPaper_paperOpen]: isOpen === true,
-                    [$style.muiPaper_paperClose]: isOpen === false,
+                    [$style.muiPaper_paperAnchorLeft]: anchor === 'left',
+                    [$style.muiPaper_paperAnchorRight]: anchor === 'right',
+                    [$style.paperOpen]: isOpen,
+                    [$style.paperClose]: !isOpen,
                 },
             ]"
         >
-            <div :class="$style.container">
-                Slider Bar
-            </div>
+            <slot>Slider Bar</slot>
         </div>
     </div>
 </template>
@@ -42,6 +41,14 @@ export default {
     props: {
         isOpen: {
             type: Boolean,
+            required: false,
+        },
+        anchor: {
+            type: String,
+            validator: function(value) {
+                return ['left', 'right'].indexOf(value) !== -1
+            },
+            default: 'left',
             required: false,
         },
     },
@@ -83,6 +90,7 @@ export default {
         background-color: rgba(0, 0, 0, 0.5);
         -webkit-tap-highlight-color: transparent;
         &_open {
+            // It is located in _animation.scss
             @include showOpacity();
         }
         &_close {
@@ -101,10 +109,26 @@ export default {
         &_paperAnchorLeft {
             left: 0;
             right: auto;
+            &.paperOpen {
+                transform: none;
+                transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+            }
+            &.paperClose {
+                transform: translateX(-250px);
+                transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+            }
         }
         &_paperAnchorRight {
             right: 0;
             left: auto;
+            &.paperOpen {
+                transform: none;
+                transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+            }
+            &.paperClose {
+                transform: translateX(250px);
+                transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+            }
         }
         &_paper {
             top: 0;
@@ -119,15 +143,6 @@ export default {
             flex-direction: column;
             -webkit-overflow-scrolling: touch;
         }
-        &_paperOpen {
-            @include showSliderBar();
-        }
-        &_paperClose {
-            @include hideSliderBar();
-        }
-    }
-    .container {
-        width: 250px;
     }
 }
 </style>

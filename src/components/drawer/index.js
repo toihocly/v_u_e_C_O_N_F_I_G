@@ -1,3 +1,3 @@
-import TemporaryDrawer from './TemporaryDrawer'
+import Drawer from './Drawer'
 
-export { TemporaryDrawer }
+export { Drawer }

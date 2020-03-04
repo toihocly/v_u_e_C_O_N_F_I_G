@@ -39,63 +39,6 @@
                 directLabel="none"
             />
         </div>
-        <div>
-            <h2>CHECKBOX COMPONENT</h2>
-            <Checkbox v-model="valueCheckbox" label="Display photos in date" />
-            <Checkbox
-                v-model="valueCheckbox"
-                label="Display photos in date"
-                directLabel="left"
-            />
-            <Checkbox
-                v-model="valueCheckbox"
-                label="Display photos in date"
-                directLabel="right"
-            />
-            <Checkbox
-                v-model="valueCheckbox"
-                label="Display photos in date"
-                directLabel="none"
-            />
-        </div>
-        <div>
-            <h2>CHECKBOX COMPONENT</h2>
-            <Checkbox v-model="valueCheckbox" label="Display photos in date" />
-            <Checkbox
-                v-model="valueCheckbox"
-                label="Display photos in date"
-                directLabel="left"
-            />
-            <Checkbox
-                v-model="valueCheckbox"
-                label="Display photos in date"
-                directLabel="right"
-            />
-            <Checkbox
-                v-model="valueCheckbox"
-                label="Display photos in date"
-                directLabel="none"
-            />
-        </div>
-        <div>
-            <h2>CHECKBOX COMPONENT</h2>
-            <Checkbox v-model="valueCheckbox" label="Display photos in date" />
-            <Checkbox
-                v-model="valueCheckbox"
-                label="Display photos in date"
-                directLabel="left"
-            />
-            <Checkbox
-                v-model="valueCheckbox"
-                label="Display photos in date"
-                directLabel="right"
-            />
-            <Checkbox
-                v-model="valueCheckbox"
-                label="Display photos in date"
-                directLabel="none"
-            />
-        </div>
     </div>
 </template>
 
